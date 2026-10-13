@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo 2 - Laboratorio 1</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #0e7490 100%);
+      color: #0f172a;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 620px;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .header {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 32px 28px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: #22d3ee;
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 3px;
+    }
+
+    .header h2 {
+      margin-top: 8px;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #cbd5e1;
+      letter-spacing: 2px;
+    }
+
+    .content {
+      padding: 28px;
+    }
+
+    .section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #64748b;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .members {
+      list-style: none;
+      margin-bottom: 26px;
+    }
+
+    .members li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      background: #f1f5f9;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #1e3a8a;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .info div {
+      padding: 16px;
+      border-radius: 10px;
+      background: #ecfeff;
+      text-align: center;
+    }
+
+    .info span {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #0e7490;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .info strong {
+      font-size: 1.25rem;
+    }
+
+    .footer {
+      padding: 14px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    @media (max-width: 480px) {
+      .header h1 { font-size: 1.8rem; }
+      .info { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header class="header">
+      <div class="badge">LABORATORIO 1</div>
+      <h1>GRUPO 2</h1>
+      <h2>TECNOLOGÍAS EMERGENTES</h2>
+    </header>
+
+    <section class="content">
+      <p class="section-title">INTEGRANTES</p>
+      <ul class="members">
+        <li><div class="avatar">CG</div>César González</li>
+        <li><div class="avatar">KO</div>Kevin Ortega</li>
+        <li><div class="avatar">DT</div>David Teneguzñay</li>
+      </ul>
+
+      <div class="info">
+        <div><span>NRC</span><strong>36670</strong></div>
+        <div><span>PRÁCTICA</span><strong>Laboratorio 1</strong></div>
+      </div>
+    </section>
+
+    <footer class="footer">Servidor Apache funcionando correctamente</footer>
+  </main>
+</body>
+</html>
